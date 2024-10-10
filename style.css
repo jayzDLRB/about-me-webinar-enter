@@ -32,8 +32,8 @@ main{
 }
 
 .profile-picture img {
-    width: 100%; /* Ajusta la imagen al 100% del contenedor */
-    height: 100%; /* Ajusta la imagen al 100% del contenedor */
+    width: 50%; /* Ajusta la imagen al 100% del contenedor */
+    height: 50%; /* Ajusta la imagen al 100% del contenedor */
     object-fit: cover; /* Asegura que la imagen no se distorsione */
     display: block; /* Elimina espacios innecesarios */
 }
