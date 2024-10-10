@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-
     <title>Pagina Principal</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
-
-<body>
-
-    <header>
-        <nav>Inicio  /  About me</nav>
-        
+<body class="font-serif text-center m-0">
+    <header class="w-full h-30">
+        <nav class="fixed w-full p-5 bg-gray-200">Inicio / About me</nav>
     </header>
 
-    <main>
+    <main class="w-4/5 mx-auto mt-20">
+        <h1 class="text-4xl mb-4">Hola, este es un h1</h1>
+        <h2 class="text-2xl mb-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
 
-        <h1>Hola, este es un h1</h1>
-        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
-
-        <div class="profile-picture">
-            <img src="RobloxScreenShot20240729_172931973.png" alt="Foto de Roblox" width="200px" height="200px">
+        <div class="mx-auto w-52 h-52 rounded-full overflow-hidden border-8 border-black bg-gradient-to-r from-purple-700 to-blue-500">
+            <img src="RobloxScreenShot20240729_172931973.png" alt="Foto de Roblox" class="w-1/2 h-1/2 object-cover block">
         </div>
 
-        
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facere doloremque animi ad explicabo labore
+        <p class="mt-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facere doloremque animi ad explicabo labore
             voluptate, ex quidem dolorem maxime aperiam deleniti, blanditiis excepturi commodi corrupti autem quis
             impedit sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor id labore amet veritatis alias
             quisquam nihil, hic mollitia, nemo ea iusto excepturi quia similique odit tenetur, nisi incidunt eaque.
-            Dicta!</p>
-
+            Dicta!
+        </p>
     </main>
-    <footer>
+
+    <footer class="p-5 bg-gradient-to-b from-indigo-900 via-pink-500 to-amber-400 text-white">
         visita pagina
     </footer>
-
 </body>
-
-</html>
